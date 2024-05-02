@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-
+import { ThemeSharedModule } from '@abp/ng.theme.shared';
 import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
 
@@ -13,7 +13,8 @@ import { BookComponent } from './book.component';
   imports: [
     CommonModule,
     NgxDatatableModule,
-    BookRoutingModule
+    BookRoutingModule,
+    ThemeSharedModule
   ]
 })
 export class BookModule { }
