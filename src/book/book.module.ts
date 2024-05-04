@@ -4,8 +4,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ThemeSharedModule } from '@abp/ng.theme.shared';
 import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
-
-
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from '../app/shared/shared.module';
 @NgModule({
   declarations: [
     BookComponent
@@ -14,7 +14,9 @@ import { BookComponent } from './book.component';
     CommonModule,
     NgxDatatableModule,
     BookRoutingModule,
-    ThemeSharedModule
+    ThemeSharedModule,
+    SharedModule,
+    NgbDatepickerModule
   ]
 })
 export class BookModule { }
